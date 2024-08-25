@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lemonada", cursive;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(80, 80, 196),
+    rgb(43, 121, 121),
+    skyblue
+  );
+}
+
+.mainContainer {
+  margin: auto;
+  margin-top: 5%;
+  width: 800px;
+  height: 500px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.mainContainer h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.mainContainer h1 span {
+  color: yellow;
+}
+
+.mainContainer .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.mainContainer .box .holder {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.holder label {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+}
+
+.holder input {
+  font-size: 1.25rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  animation: animate 1s linear infinite alternate-reverse;
+}
+
+@keyframes animate {
+  from {
+    border-bottom: 3px solid black;
+  }
+  to {
+    border-bottom: 3px solid white;
+  }
+}
+
+#submit {
+  width: 60%;
+  padding: 10px;
+  color: black;
+  font-weight: 700;
+  background: linear-gradient(45deg, blue, cyan, skyblue);
+  border: none;
+  margin-top: 20px;
+  border-radius: 35px;
+  font-size: 1.5rem;
+}
